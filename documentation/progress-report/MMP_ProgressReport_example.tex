@@ -1,0 +1,101 @@
+\documentclass[11pt,fleqn,twoside]{article}
+\usepackage{makeidx}
+\makeindex
+\usepackage{palatino} %or {times} etc
+\usepackage{plain} %bibliography style 
+\usepackage{amsmath} %math fonts - just in case
+\usepackage{amsfonts} %math fonts
+\usepackage{amssymb} %math fonts
+\usepackage{lastpage} %for footer page numbers
+\usepackage{fancyhdr} %header and footer package
+\usepackage{mmpv2} 
+\usepackage{url}
+
+% the following packages are used for citations - You only need to include one. 
+%
+% Use the cite package if you are using the numeric style (e.g. IEEEannot). 
+% Use the natbib package if you are using the author-date style (e.g. authordate2annot). 
+% Only use one of these and comment out the other one. 
+\usepackage{cite}
+%\usepackage{natbib}
+
+\begin{document}
+
+\name{Andrew Tindall}
+\userid{ajt7}
+\projecttitle{Image Processing in the National Plant Phenomics Centre}
+\projecttitlememoir{Image Processing in the National Plant Phenomics Centre} %same as the project title or abridged version for page header
+\reporttitle{Progress Report}
+\version{0.1}
+\docstatus{Draft}
+\degreeschemecode{GG4R}
+\degreeschemename{Computer Science \& Artificial Intelligence}
+\modulecode{CS39440}
+\supervisor{Hannah Dee} % e.g. Neil Taylor
+\supervisorid{hmd1}
+\wordcount{0}
+
+%optional - comment out next line to use current date for the document
+%\documentdate{26th October 2011} 
+\mmp
+
+\setcounter{tocdepth}{3} %set required number of level in table of contents
+\tableofcontents
+
+\newpage
+
+%==============================================================================
+\section{Project Summary}
+%==============================================================================
+\subsection{Phenomics}
+Before explaining the project, it is first important to understand the field in which it operates - namely that of plant phenomics.
+
+Phenomics is a field of research in biology related to the systematic observation and analysis of ``phenomes", or biochemical and physical trait expression; and how their expression changes in result to environmental and genetic factors.
+
+Phenomics is considered a rapidly emerging transdiscipline, requiring expertise in fields including ``genetics, molecular biology, cell biology, systems biology, and higher levels of phenotypic expression" alongside wider understanding of mathematical modelling and information sciences. \cite{Bilder200930}
+
+The discipline has applications across many fields including public health; human genetics; biofuels; food security; and others due to its ability to allow understanding of how factors can affect traits, allowing for more development of more resilient crops, and predispositions to disease.
+
+\subsection{Use of Image Processing in Phenomics}
+Traditionally, methods for phenome observation would involve destructive techniques that remove entire plants or parts, and this results in the need for larger physical space and longer time periods for research. \cite{DeVylder01112012}
+
+In recent years there has been a large focus on the development of high-throughput and non-destructive techniques, particularly in the analysis of Arabidopsis - a small flowering plant including Thale Cress which is used as a model organism due to being the first plant to have its genome sequenced in its entirety\cite{AGI2000}. Principle among this area is the use of image processing and analysis, which allows for remote screening of multiple traits with minimum disruption to specimens. \cite{DeVylder01112012}
+
+LemnaTec are one of the eminent organisations involved in the field of plant phenomics, supporting research institutes around the world through provision of hardware and algorithms. This includes infrastructure at the recently developed National Plant Phenomics Centre (NPPC) at Aberystwyth University which utilises robotic plant handling and automated image capture and analysis to conduct phenomics on entire plant populations in the hopes of identifying plants with increased tolerance to adverse conditions \cite{IBERSnppc}; the work of which provides the basis for this project.
+
+\subsection{Project Details}
+This project seeks to develop a system capable of using multiple algorithms for the processing and analysis of automated image data sets of arabidopsis populations grown in a controlled environment in order to provide phenotype information and analysis about the plants. In doing so, it shall be comparable to, and build upon the  the work of the NPPC, and Rosette Tracker \cite{DeVylder01112012}.
+
+The work has several limitations arising from multiple factors. Foremost is that of data collection. That the project requires the growth of populations of plants introduces inherent time factors into the project, which means datasets are time-limited, and this can hinder early analysis and testing of software. Additionally, variations in the environment for growth, and in terms of imaging, can present discrepancies in the data set, or even render parts of the set unviable for inclusion, such as due to an image being overexposed, or a camera being out of position for several frames of the set. Limitations also exist in terms of what can be achieved through visible-spectrum imaging, which is the broad focus of the project, as not everything can be observed at the scales and spectrum being used; however it may be possible for the project to utilise further imaging techniques such as IR imaging later into the project subject to the provision of data from the NPPC.
+
+Ultimately, the finished work should output data that provides answers to important questions such as ``to what extent does the ede1 mutation affect growth rates and patterns?" and flowering times between different populations. The project may be judged a success should be it capable of providing the prerequisite steps and analysis to reach this stage, as well as data that allows conclusions about phenotypes to be made on these questions and others.
+
+%==============================================================================
+\section{Current Progress}
+%==============================================================================
+
+%==============================================================================
+\section{Planning}
+%==============================================================================
+Text in here.
+
+%
+% Start to comment out / remove the following lines. They are only provided for instruction for this example template.  You don't need the following section title, because it will be added as part of the bibliography section. 
+%
+
+
+\nocite{*} % include everything from the bibliography, irrespective of whether it has been referenced.
+
+% the following line is included so that the bibliography is also shown in the table of contents. There is the possibility that this is added to the previous page for the bibliography. To address this, a newline is added so that it appears on the first page for the bibliography. 
+\newpage
+\addcontentsline{toc}{section}{Annotated Bibliography} 
+
+%
+% example of including an annotated bibliography. The current style is an author date one. If you want to change, comment out the line and uncomment the subsequent line. You should also modify the packages included at the top (see the notes earlier in the file) and then trash your aux files and re-run. 
+%\bibliographystyle{authordate2annot}
+\bibliographystyle{IEEEannot}
+\renewcommand{\refname}{Annotated Bibliography}  % if you put text into the final {} on this line, you will get an extra title, e.g. References. This isn't necessary for the outline project specification. 
+\bibliography{mmp} % References file
+
+
+\end{document}
