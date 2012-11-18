@@ -64,4 +64,6 @@ annote = {An article published by IBERS which outlines the NPPC project, its use
 @online{OpenCV,
 author = {OpenCV},
 title = {OpenCV wiki},
-url = {
+url = {http://opencv.willowgarage.com/wiki/},
+annote = {OpenCV homepage, which outlines details of what the library does, and statistics on usage and contents.}
+}

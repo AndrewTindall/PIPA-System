@@ -27,14 +27,14 @@
 \projecttitle{Image Processing in the National Plant Phenomics Centre}
 \projecttitlememoir{Image Processing in the National Plant Phenomics Centre} %same as the project title or abridged version for page header
 \reporttitle{Progress Report}
-\version{0.1}
+\version{0.5}
 \docstatus{Draft}
 \degreeschemecode{GG4R}
 \degreeschemename{Computer Science \& Artificial Intelligence}
 \modulecode{CS39440}
 \supervisor{Hannah Dee} % e.g. Neil Taylor
 \supervisorid{hmd1}
-\wordcount{0}
+\wordcount{1370}
 
 %optional - comment out next line to use current date for the document
 %\documentdate{26th October 2011} 
@@ -55,7 +55,15 @@ Phenomics is a field of research in biology related to the systematic observatio
 
 Phenomics is considered a rapidly emerging transdiscipline, requiring expertise in fields including ``genetics, molecular biology, cell biology, systems biology, and higher levels of phenotypic expression" alongside wider understanding of mathematical modelling and information sciences. \cite{Bilder200930}
 
-The discipline has applications across many fields including public health; human genetics; biofuels; food security; and others due to its ability to allow understanding of how factors can affect traits, allowing for more development of more resilient crops, and predispositions to disease.
+The discipline has applications across many fields including public health \cite{Bilder200930} ; human genetics; biofuels; global food security \cite{Furbank2011635} ; and others due to its ability to allow understanding of how factors can affect traits, allowing for more development of more resilient crops, and predispositions to disease.
+
+Plant Phenomics is a specific subset of phenomics, and concerns itself with ``the study of plant growth, performance and composition" \cite{Furbank2011635}, and is the subset observed in this project.
+
+\subsection{Plant Phenomics and Food Security}
+Food security is defined by the World Food Summit as a circumstance by which ``all people, at all times, have physical and economic access to sufficient, safe and nutritious food to meet their dietary needs and food preferences for an active and healthy life" \cite{WFS1996}.
+This is increasing taken within the context of climate change, globalisation and corporatism, international relations, and the global economy, all of which impact on the ability to provide food through links at each stage of the supply change. With environments changing and often becoming less hospitable to life, there is a turn towards breeding high-yield crops which are resilient and adapted to future climates \cite{Furbank2011635}.
+
+With traditional breeding no longer resulting in yield increases that can meet projected demand of staple crops\cite{Furbank2011635}, there is a need to turn to phenomics, which offers the ability to rapidly analyse large plant populations and thereby develop germplasm stocks that can meet current and future needs.
 
 \subsection{Use of Image Processing in Phenomics}
 Traditionally, methods for phenome observation would involve destructive techniques that remove entire plants or parts, and this results in the need for larger physical space and longer time periods for research. \cite{DeVylder01112012}
@@ -71,6 +79,8 @@ The work has several limitations arising from multiple factors. Foremost is that
 
 Ultimately, the finished work should output data that provides answers to important questions such as ``to what extent does the ede1 mutation affect growth rates and patterns?" and flowering times between different populations. The project may be judged a success should be it capable of providing the prerequisite steps and analysis to reach this stage, as well as data that allows conclusions about phenotypes to be made on these questions and others.
 
+
+
 %==============================================================================
 \section{Current Progress}
 %==============================================================================
@@ -82,6 +92,17 @@ ImageJ is a public domain image processing and analysis tool written for the jav
 Both are common in academic environments, although OpenCV appears to enjoy wider uptake across sectors, perhaps due to being available across multiple programming languages, and comprehensive documentation for the C++ implementation.
 
 After preliminary reading and research into the kind of techniques required to undertake this project, and after consideration of familiarity with each library, and the required programming languages for such; it was decided that initial prototyping would make use of JavaCV to provide the underlying functionality of the project. Whilst additional methods and algorithms will likely be required to written regardless of library, it is possible that should issues with JavaCV arise in any systematic or seriously hindering way, use of switching to other libraries shall be considered prior to formalisation of a stable code branch.
+
+\subsection{Language selection}
+Java was selected as the programming language for the implementation of  this project due to two primary reasons. Firstly, it is the language in which the most experience is currently held, and so work can focus on actual implementation rather than learning the language itself. Secondly, Java is capable of running on the majority of platforms and hardware configurations without any notable or significant differences in each instance.
+
+Subjection to the completion of all planned features, and excluding any earlier switches due to any arising issues that render the current language and libraries unusable for the project, it shall be explored the possibility of porting the project to other languages as part of the refactoring process - for example Ruby, with which some familiarity is held, or Python or C++ which are commonly used for the development of image processing and analysis systems.
+
+In doing this, it should be achievable to decrease computation times that result from the java runtime environment’s resource consumption, and allows for greater understanding of core concepts and furtherment of knowledge of programming languages with which current knowledge is lesser compared to java. 
+
+Any such decisions on language or library porting shall be done on the basis of maintaining a stable branch in its then-current state so that a functioning system may be delivered regardless of any issues occurring in these forks. 
+
+Should any forks be completed, they shall be evaluated and possibly replace the stable branch for submission, or if entirely equivalent, both be submitted as viable code bases.
 
 \subsection{System Overview}
 Before any prototyping was begun, it was reviewed at a top-down level what features the project would require. Broadly, the system can be broken down into three categories: Image Collection, Image Processing, and Image Analysis.
@@ -117,7 +138,7 @@ Following the successful test, the segmentation method was adapted to make use o
 \centering
 \includegraphics[width=0.3\textwidth]{seg-histo.jpg}
 \caption{Naive histogram-derived image segmentation}
-\label{fig:seg-test}
+\label{fig:seg-histo}
 \end{figure}
 
 It was decided that a solution to the issues that presented when using histograms to define segmentation, was to use histograms across the entire data set as a form of “voting” for the hue ranges to segmentate on the current image in the set. This would thereby allow images later in the set, which would in most cases contain an increasing amount of plant-specific colours inherent due to the growth of plants meaning they cover more of an image, have an influence over the dominant colours that define a plant. This solution is not yet fully implemented however is projected for completion by the end of week 47, 2012.
