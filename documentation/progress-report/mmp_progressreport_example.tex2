@@ -111,7 +111,7 @@ The next feature to be developed was a rudimentary image segmentation method, wh
 \label{fig:seg-test}
 \end{figure}
 
-Following the successful test, the segmentation method was adapted to make use of histogram information, as real life objects are not just a single hue, and so to adequately detect them, we must look at multiple values across specific ranges. Segmentation at this stage would only highlight the most common hue value “bucket”, which in images from earlier in the dataset, would not correspond to the plants; and depending on the fuzziness of each bucket, would effectively just create a black and white version of the original image.
+Following the successful test, the segmentation method was adapted to make use of histogram information, as real life objects are not just a single hue, and so to adequately detect them, we must look at multiple values across specific ranges. Segmentation at this stage would only highlight the most common hue value “bucket”, which in images from earlier in the dataset, would not correspond to the plants.
 
 \begin{figure}[seg-histo]
 \centering
@@ -119,10 +119,6 @@ Following the successful test, the segmentation method was adapted to make use o
 \caption{Naive histogram-derived image segmentation}
 \label{fig:seg-test}
 \end{figure}
-
-It was decided that a solution to the issues that presented when using histograms to define segmentation, was to use histograms across the entire data set as a form of “voting” for the hue ranges to segmentate on the current image in the set. This would thereby allow images later in the set, which would in most cases contain an increasing amount of plant-specific colours inherent due to the growth of plants meaning they cover more of an image, have an influence over the dominant colours that define a plant. This solution is not yet fully implemented however is projected for completion by the end of week 47, 2012.
-
-As per the system overview, the next feature to be prototyped shall be that of plant detection, including defining boundaries for each plant, potentially through use of environmental features, as well as plant diameter and compactness as used in Rosette Tracker \cite{DeVylder01112012}.
 
 
 %==============================================================================

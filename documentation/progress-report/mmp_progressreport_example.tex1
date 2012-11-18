@@ -10,6 +10,7 @@
 \usepackage{fancyhdr} %header and footer package
 \usepackage{mmpv2} 
 \usepackage{url}
+\usepackage{graphicx}
 
 % the following packages are used for citations - You only need to include one. 
 %
@@ -21,17 +22,19 @@
 
 \begin{document}
 
-\name{Your Name}
-\userid{xyz}
-\projecttitle{Your project title: Which can be longer when it is displayed on the front page of the document}
-\projecttitlememoir{Your project title (shorter form, if necessary)} %same as the project title or abridged version for page header
+\name{Andrew Tindall}
+\userid{ajt7}
+\projecttitle{Image Processing in the National Plant Phenomics Centre}
+\projecttitlememoir{Image Processing in the National Plant Phenomics Centre} %same as the project title or abridged version for page header
 \reporttitle{Progress Report}
 \version{0.1}
 \docstatus{Draft}
+\degreeschemecode{GG4R}
+\degreeschemename{Computer Science \& Artificial Intelligence}
 \modulecode{CS39440}
-\supervisor{Supervisor Name} % e.g. Neil Taylor
-\supervisorid{abc}
-\wordcount{4500}
+\supervisor{Hannah Dee} % e.g. Neil Taylor
+\supervisorid{hmd1}
+\wordcount{0}
 
 %optional - comment out next line to use current date for the document
 %\documentdate{26th October 2011} 
@@ -45,12 +48,78 @@
 %==============================================================================
 \section{Project Summary}
 %==============================================================================
-Text in here.
+\subsection{Phenomics}
+Before explaining the project, it is first important to understand the field in which it operates - namely that of plant phenomics.
+
+Phenomics is a field of research in biology related to the systematic observation and analysis of ``phenomes", or biochemical and physical trait expression; and how their expression changes in result to environmental and genetic factors.
+
+Phenomics is considered a rapidly emerging transdiscipline, requiring expertise in fields including ``genetics, molecular biology, cell biology, systems biology, and higher levels of phenotypic expression" alongside wider understanding of mathematical modelling and information sciences. \cite{Bilder200930}
+
+The discipline has applications across many fields including public health; human genetics; biofuels; food security; and others due to its ability to allow understanding of how factors can affect traits, allowing for more development of more resilient crops, and predispositions to disease.
+
+\subsection{Use of Image Processing in Phenomics}
+Traditionally, methods for phenome observation would involve destructive techniques that remove entire plants or parts, and this results in the need for larger physical space and longer time periods for research. \cite{DeVylder01112012}
+
+In recent years there has been a large focus on the development of high-throughput and non-destructive techniques, particularly in the analysis of Arabidopsis - a small flowering plant including Thale Cress which is used as a model organism due to being the first plant to have its genome sequenced in its entirety\cite{AGI2000}. Principle among this area is the use of image processing and analysis, which allows for remote screening of multiple traits with minimum disruption to specimens. \cite{DeVylder01112012}
+
+LemnaTec are one of the eminent organisations involved in the field of plant phenomics, supporting research institutes around the world through provision of hardware and algorithms. This includes infrastructure at the recently developed National Plant Phenomics Centre (NPPC) at Aberystwyth University which utilises robotic plant handling and automated image capture and analysis to conduct phenomics on entire plant populations in the hopes of identifying plants with increased tolerance to adverse conditions \cite{IBERSnppc}; the work of which provides the basis for this project.
+
+\subsection{Project Details}
+This project seeks to develop a system capable of using multiple algorithms for the processing and analysis of automated image data sets of arabidopsis populations grown in a controlled environment in order to provide phenotype information and analysis about the plants. In doing so, it shall be comparable to, and build upon the  the work of the NPPC, and Rosette Tracker \cite{DeVylder01112012}.
+
+The work has several limitations arising from multiple factors. Foremost is that of data collection. That the project requires the growth of populations of plants introduces inherent time factors into the project, which means datasets are time-limited, and this can hinder early analysis and testing of software. Additionally, variations in the environment for growth, and in terms of imaging, can present discrepancies in the data set, or even render parts of the set unviable for inclusion, such as due to an image being overexposed, or a camera being out of position for several frames of the set. Limitations also exist in terms of what can be achieved through visible-spectrum imaging, which is the broad focus of the project, as not everything can be observed at the scales and spectrum being used; however it may be possible for the project to utilise further imaging techniques such as IR imaging later into the project subject to the provision of data from the NPPC.
+
+Ultimately, the finished work should output data that provides answers to important questions such as ``to what extent does the ede1 mutation affect growth rates and patterns?" and flowering times between different populations. The project may be judged a success should be it capable of providing the prerequisite steps and analysis to reach this stage, as well as data that allows conclusions about phenotypes to be made on these questions and others.
 
 %==============================================================================
 \section{Current Progress}
 %==============================================================================
-Text in here. 
+\subsection{Technologies and libraries}
+There exists numerous libraries for image processing and analysis, including ImageJ and OpenCV. Each of these tends to implement common processing techniques such as Canny and Sobel Edge Detection, image segmentation, etc.
+
+ImageJ is a public domain image processing and analysis tool written for the java programming language. OpenCV is a similar, open source implementation for C++, C and Python and has over 2500 optimised algorithms \cite{opencv}. Wrappers exists for OpenCV, including JavaCV, which allows for its use in java.
+
+Both are common in academic environments, although OpenCV appears to enjoy wider uptake across sectors, perhaps due to being available across multiple programming languages, and comprehensive documentation for the C++ implementation.
+
+After preliminary reading and research into the kind of techniques required to undertake this project, and after consideration of familiarity with each library, and the required programming languages for such; it was decided that initial prototyping would make use of JavaCV to provide the underlying functionality of the project. Whilst additional methods and algorithms will likely be required to written regardless of library, it is possible that should issues with JavaCV arise in any systematic or seriously hindering way, use of switching to other libraries shall be considered prior to formalisation of a stable code branch.
+
+\subsection{System Overview}
+Before any prototyping was begun, it was reviewed at a top-down level what features the project would require. Broadly, the system can be broken down into three categories: Image Collection, Image Processing, and Image Analysis.
+
+Each of these stages were further broken down until individual processes were defined, and this was used as the basis for prototyping and development, by working chronologically through the processes, amending and introducing new processes where needed or beneficial.
+
+\begin{figure}[system-overview]
+\centering
+\includegraphics[width=0.85\textwidth]{system-overview.png}
+\caption{Breakdown of system processes including image processing and analysis.}
+\label{fig:system-overview}
+\end{figure}
+
+As a result of this methodology, the current system overview is as displayed in figure 1, and although likely to remain broadly the same, sections are likely to be added, removed, or otherwise adjusted as the project progresses.
+
+\subsection{Prototyping and Experimentation}
+The project is being developed incrementally, with prototypes of each feature being developed and refined before moving onto the next feature. Eventually these refined prototypes will be revised and merged into a stable code branch, with additional prototyping forks being merged in at later dates.
+
+The first code developed was for handling image input and output, and under OpenCV/JavaCV, is mere lines long. This code forms the basis of all following features, as the vast majority of work requires access to the raw data set or processed images.
+
+The next feature to be developed was a rudimentary image segmentation method, which initially took a pre-defined hue, and matched this against the HSV colour space for a given image, returning a segmented image showing just pixels of that hue. Figure 2 shows the result of this code run against a test image.
+
+\begin{figure}[seg-test]
+\centering
+\includegraphics[width=0.3\textwidth]{seg-test-compare.jpg}
+\caption{Comparison of test image input with results of preliminary image segmentation}
+\label{fig:seg-test}
+\end{figure}
+
+Following the successful test, the segmentation method was adapted to make use of histogram information, as real life objects are not just a single hue, and so to adequately detect them, we must look at multiple values across specific ranges. Segmentation at this stage would only highlight the most common hue value “bucket”, which in images from earlier in the dataset, would not correspond to the plants, and depending on the fuzziness of each bucket, would effectively just create a black and white version of the original image.
+
+\begin{figure}[seg-histo]
+\centering
+\includegraphics[width=0.3\textwidth]{seg-histo.jpg}
+\caption{Naive histogram-derived image segmentation}
+\label{fig:seg-test}
+\end{figure}
+
 
 %==============================================================================
 \section{Planning}
@@ -59,18 +128,6 @@ Text in here.
 
 %
 % Start to comment out / remove the following lines. They are only provided for instruction for this example template.  You don't need the following section title, because it will be added as part of the bibliography section. 
-%
-%==============================================================================
-\section*{Your Bibliography - REMOVE for final version}
-%==============================================================================
-%
-You need to include an annotated bibliography. This should list all relevant web pages, books, journals etc. that you have consulted in researching your project. Each reference should include an annotation. 
-
-The purpose of the section is to understand what sources you are looking at.  A correctly formatted list of items is sufficient. You might go further and make use of bibliographic tools, e.g. BibTeX in a LaTeX document, could be used to provide citations, for example \cite{NumericalRecipes} \cite{MarksPaper} \cite[99-101]{FailBlog} \cite{kittenpic_ref}.  The bibliographic tools are not a requirement, but you are welcome to use them.   
-
-You can remove the above {\em Your Bibliography} section heading because it will be added in by the renewcommand which is part of the bibliography. The correct annotated bibliography information is provided below. 
-%
-% End of comment out / remove the lines. They are only provided for instruction for this example template. 
 %
 
 

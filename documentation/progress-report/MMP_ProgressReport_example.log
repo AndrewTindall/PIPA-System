@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.10.12)  18 NOV 2012 17:27
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.10.12)  18 NOV 2012 20:15
 entering extended mode
 **mmp_progressreport_example.tex
 
@@ -206,20 +206,24 @@ LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
 )
 (d:\Work\University\ACS\MajorProject\PIPA\ProgressReport\LaTeXTemplate\mmp_prog
-ressreport_example.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 22.
+ressreport_example.aux
+
+LaTeX Warning: Label `fig:seg-test' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 23.
  ("D:\Utilities\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
@@ -229,7 +233,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 22.
+(lastpage)             ! on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -279,16 +283,16 @@ Package lastpage Info: Please have a look at the pageslts package at
 \makeMPintoPDFobject=\count108
 \everyMPtoPDFconversion=\toks22
 )
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 40.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 41.
  ("D:\Utilities\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 40.
+LaTeX Font Info:    Try loading font information for U+msa on input line 41.
 
 ("D:\Utilities\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 40.
+LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 
 ("D:\Utilities\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -299,7 +303,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 43.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 44.
 
 (d:\Work\University\ACS\MajorProject\PIPA\ProgressReport\LaTeXTemplate\mmp_prog
 ressreport_example.toc
@@ -309,8 +313,45 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
 \tf@toc=\write4
  [1]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 50.
- [2] [3]
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 51.
+ [2]
+Overfull \hbox (11.74565pt too wide) in paragraph at lines 78--79
+\OT1/ppl/m/n/10.95 There ex-ists nu-mer-ous li-braries for im-age pro-cess-ing 
+and anal-y-sis, in-clud-ing Im-ageJ and OpenCV.
+ []
+
+<system-overview.png, id=14, 477.7047pt x 162.3666pt>
+File: system-overview.png Graphic file (type png)
+
+<use system-overview.png>
+Package pdftex.def Info: system-overview.png used on input line 93.
+(pdftex.def)             Requested size: 386.96027pt x 131.52612pt.
+
+Overfull \hbox (22.01216pt too wide) in paragraph at lines 103--104
+[]\OT1/ppl/m/n/10.95 The first code de-vel-oped was for han-dling im-age in-put
+ and out-put, and un-der OpenCV/JavaCV,
+ []
+
+[3] <seg-test-compare.jpg, id=18, 401.5pt x 654.445pt>
+File: seg-test-compare.jpg Graphic file (type jpg)
+
+<use seg-test-compare.jpg>
+Package pdftex.def Info: seg-test-compare.jpg used on input line 109.
+(pdftex.def)             Requested size: 136.57462pt x 222.6182pt.
+Missing character: There is no “ in font pplr7t!
+Missing character: There is no ” in font pplr7t!
+ <seg-histo.jpg, id=19, 1606.0pt x 1204.5pt>
+File: seg-histo.jpg Graphic file (type jpg)
+
+<use seg-histo.jpg>
+Package pdftex.def Info: seg-histo.jpg used on input line 118.
+(pdftex.def)             Requested size: 136.57462pt x 102.4271pt.
+Missing character: There is no “ in font pplr7t!
+Missing character: There is no ” in font pplr7t!
+ [4 <d:/Work/University/ACS/MajorProject/PIPA/ProgressReport/LaTeXTemplate/syst
+em-overview.png (PNG copy)> <d:/Work/University/ACS/MajorProject/PIPA/ProgressR
+eport/LaTeXTemplate/seg-test-compare.jpg>] [5 <d:/Work/University/ACS/MajorProj
+ect/PIPA/ProgressReport/LaTeXTemplate/seg-histo.jpg>]
 (d:\Work\University\ACS\MajorProject\PIPA\ProgressReport\LaTeXTemplate\mmp_prog
 ressreport_example.bbl
 Underfull \hbox (badness 1048) in paragraph at lines 54--59
@@ -326,25 +367,28 @@ ac-cel-er-at-ing
 
 ) 
 AED: lastpage setting LastPage
-[4]
+[6]
 (d:\Work\University\ACS\MajorProject\PIPA\ProgressReport\LaTeXTemplate\mmp_prog
-ressreport_example.aux) ) 
+ressreport_example.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3071 strings out of 494045
- 39821 string characters out of 3149995
- 100715 words of memory out of 3000000
- 6302 multiletter control sequences out of 15000+200000
+ 3092 strings out of 494045
+ 40195 string characters out of 3149995
+ 101773 words of memory out of 3000000
+ 6318 multiletter control sequences out of 15000+200000
  18710 words of font info for 56 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  34i,10n,43p,1009b,271s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/Utilities/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.e
-nc}<D:/Utilities/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/Utilities/M
-iKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><D:/Utilities/MiKTeX 2.9/fonts/ty
-pe1/urw/palatino/uplr8a.pfb><D:/Utilities/MiKTeX 2.9/fonts/type1/urw/palatino/u
-plri8a.pfb>
-Output written on mmp_progressreport_example.pdf (5 pages, 67801 bytes).
+{D:/Utilities/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<D:/Utilities/MiKTeX
+ 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/Utilities/MiKTeX 2.9/fonts/type1/u
+rw/palatino/uplb8a.pfb><D:/Utilities/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a
+.pfb><D:/Utilities/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on mmp_progressreport_example.pdf (7 pages, 996627 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
+ 46 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,10 +1,6 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: mmp_progressreport_example.aux
 The style file: IEEEannot.bst
 Database file #1: mmp.bib
-Warning--I didn't find a database entry for "NumericalRecipes"
-Warning--I didn't find a database entry for "MarksPaper"
-Warning--I didn't find a database entry for "FailBlog"
-Warning--I didn't find a database entry for "kittenpic_ref"
 -- IEEEtranS.bst version 1.11 (2003/04/02) by Michael Shell.
 -- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -13,4 +9,4 @@ Warning--empty journal in IBERSnppc
 Warning--empty year in IBERSnppc
 
 Done.
-(There were 6 warnings)
+(There were 2 warnings)

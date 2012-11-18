@@ -60,6 +60,14 @@ J.~De~Vylder, F.~Vandenbussche, Y.~Hu, W.~Philips, and D.~Van Der~Straeten,
   NPPC project, its uses, and the wider context surrounding its work.
   \end{quotation}
 
+\bibitem{opencv}
+\BIBentryALTinterwordspacing
+OpenCV. Opencv wiki. [Online]. Available:
+  \url{http://opencv.willowgarage.com/wiki/}
+\BIBentrySTDinterwordspacing
+ \begin{quotation}\noindent OpenCV homepage, which outlines details of what the
+  library does, and statistics on usage and contents. \end{quotation}
+
 \bibitem{AGI2000}
 \BIBentryALTinterwordspacing
 {The Arabidopsis Genome Iniative}, ``Analysis of the genome sequence of the
