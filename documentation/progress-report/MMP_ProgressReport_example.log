@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.10.12)  19 NOV 2012 02:38
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.10.12)  19 NOV 2012 11:48
 entering extended mode
 **mmp_progressreport_example.tex
 
-(d:\Work\University\ACS\MajorProject\PIPA\ProgressReport\LaTeXTemplate\mmp_prog
+(D:\Work\University\ACS\MajorProject\PIPA\ProgressReport\LaTeXTemplate\mmp_prog
 ressreport_example.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
@@ -133,7 +133,7 @@ Package: lastpage 2011/09/01 v1.2k Refers to last page's name (HMM; JPG)
 \f@ncyO@olf=\skip53
 \f@ncyO@orf=\skip54
 )
-(d:\Work\University\ACS\MajorProject\PIPA\ProgressReport\LaTeXTemplate\mmpv2.st
+(D:\Work\University\ACS\MajorProject\PIPA\ProgressReport\LaTeXTemplate\mmpv2.st
 y
 Package: mmpv2 
  ("D:\Utilities\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
@@ -205,7 +205,7 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
 )
-(d:\Work\University\ACS\MajorProject\PIPA\ProgressReport\LaTeXTemplate\mmp_prog
+(D:\Work\University\ACS\MajorProject\PIPA\ProgressReport\LaTeXTemplate\mmp_prog
 ressreport_example.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
@@ -301,7 +301,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 44.
 
-(d:\Work\University\ACS\MajorProject\PIPA\ProgressReport\LaTeXTemplate\mmp_prog
+(D:\Work\University\ACS\MajorProject\PIPA\ProgressReport\LaTeXTemplate\mmp_prog
 ressreport_example.toc
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1.
@@ -330,7 +330,7 @@ Overfull \hbox (22.01216pt too wide) in paragraph at lines 124--125
  and out-put, and un-der OpenCV/JavaCV,
  []
 
-[4 <d:/Work/University/ACS/MajorProject/PIPA/ProgressReport/LaTeXTemplate/syste
+[4 <D:/Work/University/ACS/MajorProject/PIPA/ProgressReport/LaTeXTemplate/syste
 m-overview.png (PNG copy)>] <seg-test-compare.jpg, id=21, 401.5pt x 654.445pt>
 File: seg-test-compare.jpg Graphic file (type jpg)
 
@@ -347,19 +347,19 @@ Package pdftex.def Info: seg-histo.jpg used on input line 139.
 (pdftex.def)             Requested size: 136.57462pt x 102.4271pt.
 Missing character: There is no “ in font pplr7t!
 Missing character: There is no ” in font pplr7t!
- [5 <d:/Work/University/ACS/MajorProject/PIPA/ProgressReport/LaTeXTemplate/seg-
-test-compare.jpg> <d:/Work/University/ACS/MajorProject/PIPA/ProgressReport/LaTe
+ [5 <D:/Work/University/ACS/MajorProject/PIPA/ProgressReport/LaTeXTemplate/seg-
+test-compare.jpg> <D:/Work/University/ACS/MajorProject/PIPA/ProgressReport/LaTe
 XTemplate/seg-histo.jpg>] [6]
 <gantt.png, id=30, 1110.39844pt x 500.62032pt>
 File: gantt.png Graphic file (type png)
  <use gantt.png>
-Package pdftex.def Info: gantt.png used on input line 179.
+Package pdftex.def Info: gantt.png used on input line 187.
 (pdftex.def)             Requested size: 455.24411pt x 205.24802pt.
 Missing character: There is no “ in font pplr7t!
 Missing character: There is no ” in font pplr7t!
- [7 <d:/Work/University/ACS/MajorProject/PIPA/ProgressReport/LaTeXTemplate/gant
-t.png>]
-(d:\Work\University\ACS\MajorProject\PIPA\ProgressReport\LaTeXTemplate\mmp_prog
+ [7] [8 <D:/Work/University/ACS/MajorProject/PIPA/ProgressReport/LaTeXTemplate/
+gantt.png>]
+(D:\Work\University\ACS\MajorProject\PIPA\ProgressReport\LaTeXTemplate\mmp_prog
 ressreport_example.bbl
 Underfull \hbox (badness 1048) in paragraph at lines 75--80
 []\OT1/ppl/m/n/10.95 Institute of Bi-o-log-i-cal, En-vi-ron-men-tal, and Ru-ral
@@ -372,27 +372,27 @@ Underfull \hbox (badness 1571) in paragraph at lines 75--80
 ac-cel-er-at-ing
  []
 
-[8]) 
+[9]) 
 AED: lastpage setting LastPage
-[9]
-(d:\Work\University\ACS\MajorProject\PIPA\ProgressReport\LaTeXTemplate\mmp_prog
+[10]
+(D:\Work\University\ACS\MajorProject\PIPA\ProgressReport\LaTeXTemplate\mmp_prog
 ressreport_example.aux) ) 
 Here is how much of TeX's memory you used:
  3101 strings out of 494045
  40310 string characters out of 3149995
- 102788 words of memory out of 3000000
+ 102790 words of memory out of 3000000
  6326 multiletter control sequences out of 15000+200000
  18710 words of font info for 56 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 34i,11n,43p,1009b,375s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,11n,43p,1009b,377s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Utilities/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.e
 nc}<D:/Utilities/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/Utilities/M
 iKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><D:/Utilities/MiKTeX 2.9/fonts/ty
 pe1/urw/palatino/uplr8a.pfb><D:/Utilities/MiKTeX 2.9/fonts/type1/urw/palatino/u
 plri8a.pfb>
-Output written on mmp_progressreport_example.pdf (10 pages, 1056745 bytes).
+Output written on mmp_progressreport_example.pdf (11 pages, 1059504 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
+ 59 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -163,16 +163,35 @@ It was decided that as the project was wide enough to provide uncertainty in low
 In doing this, a working product can be derived from a broad system overview, or system control list, and each feature can be implemented easily and in a manageable and scheduled manner. This means a clear road-plan exists whilst also providing fluidity and adaptability in the project.
 
 \subsection{Project Schedule}
+Figure 4 depicts the current project road-plan through to the final deliverable of the final presentation, taking into account likely risks or delays caused by external factors such as exams starting in week 3, 2013; conference attendances throughout the same timeframe as the project, and temporary incapacity due to illness. 
+
+Each task prior to Week 1, 2013, corresponds to development of key features through an iterative process, and this deadline is set to ensure a core set of features are delivered. Following weeks account for the formalisation and refactoring of this code base, whilst exploring other opportunities to build upon this core.
+The plan provides a full six weeks where the code should be locked and work is focused entirely on delivery of the final report. This is reflective of the weighting of the report, as well as the need to ensure functional, documented code prior to the final delivery of the project.
+
+Given the nature of iterative and incremental development, several weeks have been set aside for the exploration of techniques not yet specified in the control list / system overview.
+
+By week 50, the code base should contain functionality for the core features required for basic analysis, namely colour frequency analysis, image segmentation, and plant classification. In the following weeks, additional algorithms are to be added to further refine these features, as well as to provide analysis in other areas, for example, leaf density.
+
+In addition to the tasks listed, it is hoped that discussions shall be held with staff and researchers involved in the National Plant Phenomics Centre at IBERS; and it is likely that such talks will help shape the direction of the project, such as by providing insight into potential problems for the system to attempt to solve, or access to new datasets potentially using different imaging techniques. Changes due to this are already partially factored into the assigned time frames for the completion of each task.
 
 \begin{figure}[gantt]
 \centering
-\includegraphics[width=0.95\textwidth]{gantt.png}
+\includegraphics[width=1\textwidth]{gantt.png}
 \caption{Gantt diagram showing project road-plan through to week 18, 2013 }
 \label{fig:gantt}
 \end{figure}
 
-
 \subsection{Demonstrations}
+Completion of the project includes two demonstrations of the system. Once during week 5, 2013, and again during week 18, 2013. In both instances, it is hoped that results of the analysis from implemented features can be presented, where possible demonstrating the processing and analysis live.
+
+In the mid-project demonstration, it is to be expected that there would be less data to show due to not all analysis features being implemented at that stage, as well as the possibility of additional data sets being made available throughout the duration of the project, including after this demonstration. However, it should be considered sufficient to demonstrate, more than merely “proof of concept”, that the system is functional and capable of producing real phenomic information based on the provided input data, even if the output data is limited in its scope at this stage.
+
+For the final demonstration, it is expected that more findings of project can be reported, namely at least some of the questions laid out in prior sections of this document. In addition, a live demonstration of the software, should also be conducted, as well as potential discussion of future scope for research and development from this project post-delivery.
+
+With both demonstrations, access to a projector, and a device capable of running presentation software is a clear requirement. Ensuring the device is also capable of processing data in real-time and within the timeframe of the demonstration is also a major consideration, which may involve the selection of a subset of a data set or other such preparation to ensure execution times are permissible.
+
+
+
 
 
 

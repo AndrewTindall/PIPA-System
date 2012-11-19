@@ -27,14 +27,14 @@
 \projecttitle{Image Processing in the National Plant Phenomics Centre}
 \projecttitlememoir{Image Processing in the National Plant Phenomics Centre} %same as the project title or abridged version for page header
 \reporttitle{Progress Report}
-\version{0.5}
+\version{0.8}
 \docstatus{Draft}
 \degreeschemecode{GG4R}
 \degreeschemename{Computer Science \& Artificial Intelligence}
 \modulecode{CS39440}
 \supervisor{Hannah Dee} % e.g. Neil Taylor
 \supervisorid{hmd1}
-\wordcount{1370}
+\wordcount{2773}
 
 %optional - comment out next line to use current date for the document
 %\documentdate{26th October 2011} 
@@ -170,6 +170,10 @@ The plan provides a full six weeks where the code should be locked and work is f
 
 Given the nature of iterative and incremental development, several weeks have been set aside for the exploration of techniques not yet specified in the control list / system overview.
 
+By week 50, the code base should contain functionality for the core features required for basic analysis, namely colour frequency analysis, image segmentation, and plant classification. In the following weeks, additional algorithms are to be added to further refine these features, as well as to provide analysis in other areas, for example, leaf density.
+
+In addition to the tasks listed, it is hoped that discussions shall be held with staff and researchers involved in the National Plant Phenomics Centre at IBERS; and it is likely that such talks will help shape the direction of the project, such as by providing insight into potential problems for the system to attempt to solve, or access to new datasets potentially using different imaging techniques. Changes due to this are already partially factored into the assigned time frames for the completion of each task.
+
 \begin{figure}[gantt]
 \centering
 \includegraphics[width=1\textwidth]{gantt.png}
@@ -177,8 +181,15 @@ Given the nature of iterative and incremental development, several weeks have be
 \label{fig:gantt}
 \end{figure}
 
-
 \subsection{Demonstrations}
+Completion of the project includes two demonstrations of the system. Once during week 5, 2013, and again during week 18, 2013. In both instances, it is hoped that results of the analysis from implemented features can be presented, where possible demonstrating the processing and analysis live.
+
+In the mid-project demonstration, it is to be expected that there would be less data to show due to not all analysis features being implemented at that stage, as well as the possibility of additional data sets being made available throughout the duration of the project, including after this demonstration. However, it should be considered sufficient to demonstrate, more than merely “proof of concept”, that the system is functional and capable of producing real phenomic information based on the provided input data, even if the output data is limited in its scope at this stage.
+
+For the final demonstration, it is expected that more findings of project can be reported, namely at least some of the questions laid out in prior sections of this document. In addition, a live demonstration of the software, should also be conducted, as well as potential discussion of future scope for research and development from this project post-delivery.
+
+With both demonstrations, access to a projector, and a device capable of running presentation software is a clear requirement. Ensuring the device is also capable of processing data in real-time and within the timeframe of the demonstration is also a major consideration, which may involve the selection of a subset of a data set or other such preparation to ensure execution times are permissible.
+
 
 
 

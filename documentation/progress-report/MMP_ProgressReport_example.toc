@@ -8,8 +8,9 @@
 \contentsline {subsection}{\numberline {2.2}Language selection}{3}
 \contentsline {subsection}{\numberline {2.3}System Overview}{4}
 \contentsline {subsection}{\numberline {2.4}Prototyping and Experimentation}{4}
+\contentsline {subsection}{\numberline {2.5}Technical Issues and Risks}{6}
 \contentsline {section}{\numberline {3}Planning}{6}
 \contentsline {subsection}{\numberline {3.1}Methodology}{6}
-\contentsline {subsection}{\numberline {3.2}Project Schedule}{6}
+\contentsline {subsection}{\numberline {3.2}Project Schedule}{7}
 \contentsline {subsection}{\numberline {3.3}Demonstrations}{7}
-\contentsline {section}{Annotated Bibliography}{8}
+\contentsline {section}{Annotated Bibliography}{9}
