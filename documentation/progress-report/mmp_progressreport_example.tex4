@@ -166,7 +166,7 @@ In doing this, a working product can be derived from a broad system overview, or
 
 \begin{figure}[gantt]
 \centering
-\includegraphics[width=0.85\textwidth]{gantt.png}
+\includegraphics[width=0.95\textwidth]{gantt.png}
 \caption{Gantt diagram showing project road-plan through to week 18, 2013 }
 \label{fig:gantt}
 \end{figure}

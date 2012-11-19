@@ -98,7 +98,6 @@
  Author (User Id) &  \parbox{4in}{\showname \hspace*{0.05in}(\showuserid)}\\
  Supervisor (User Id) & \showsupervisor \hspace*{0.05in}(\showsupervisorid)\\
  \\
- Course & \parbox{4in}{\showdegreeschemecode \hspace*{0.05in} \showdegreeschemename}\\
  Module & \parbox{4in}{\showmodulecode}\\
  \\
  Date & \mmpdocdate\\
