@@ -59,6 +59,12 @@ The discipline has applications across many fields including public health \cite
 
 Plant Phenomics is a specific subset of phenomics, and concerns itself with ``the study of plant growth, performance and composition" \cite{Furbank2011635}, and is the subset observed in this project.
 
+\subsection{Plant Phenomics and Food Security}
+Food security is defined by the World Food Summit as a circumstance by which ``all people, at all times, have physical and economic access to sufficient, safe and nutritious food to meet their dietary needs and food preferences for an active and healthy life" \cite{WFS1996}.
+This is increasing taken within the context of climate change, globalisation and corporatism, international relations, and the global economy, all of which impact on the ability to provide food through links at each stage of the supply change. With environments changing and often becoming less hospitable to life, there is a turn towards breeding high-yield crops which are resilient and adapted to future climates \cite{Furbank2011635}.
+
+With traditional breeding no longer resulting in yield increases that can meet projected demand of staple crops\cite{Furbank2011635}, there is a need to turn to phenomics, which offers the ability to rapidly analyse large plant populations and thereby develop germplasm stocks that can meet current and future needs.
+
 \subsection{Use of Image Processing in Phenomics}
 Traditionally, methods for phenome observation would involve destructive techniques that remove entire plants or parts, and this results in the need for larger physical space and longer time periods for research. \cite{DeVylder01112012}
 
@@ -66,15 +72,13 @@ In recent years there has been a large focus on the development of high-throughp
 
 LemnaTec are one of the eminent organisations involved in the field of plant phenomics, supporting research institutes around the world through provision of hardware and algorithms. This includes infrastructure at the recently developed National Plant Phenomics Centre (NPPC) at Aberystwyth University which utilises robotic plant handling and automated image capture and analysis to conduct phenomics on entire plant populations in the hopes of identifying plants with increased tolerance to adverse conditions \cite{IBERSnppc}; the work of which provides the basis for this project.
 
-\subsection{Plant Phenomics and Food Security}
-Food security is defined by the World Food Summit as a circumstance by which ``all people, at all times, have physical and economic access to sufficient, safe and nutritious food to meet their dietary needs and food preferences for an active and healthy life" \cite{WFS1996}
-
 \subsection{Project Details}
 This project seeks to develop a system capable of using multiple algorithms for the processing and analysis of automated image data sets of arabidopsis populations grown in a controlled environment in order to provide phenotype information and analysis about the plants. In doing so, it shall be comparable to, and build upon the  the work of the NPPC, and Rosette Tracker \cite{DeVylder01112012}.
 
 The work has several limitations arising from multiple factors. Foremost is that of data collection. That the project requires the growth of populations of plants introduces inherent time factors into the project, which means datasets are time-limited, and this can hinder early analysis and testing of software. Additionally, variations in the environment for growth, and in terms of imaging, can present discrepancies in the data set, or even render parts of the set unviable for inclusion, such as due to an image being overexposed, or a camera being out of position for several frames of the set. Limitations also exist in terms of what can be achieved through visible-spectrum imaging, which is the broad focus of the project, as not everything can be observed at the scales and spectrum being used; however it may be possible for the project to utilise further imaging techniques such as IR imaging later into the project subject to the provision of data from the NPPC.
 
 Ultimately, the finished work should output data that provides answers to important questions such as ``to what extent does the ede1 mutation affect growth rates and patterns?" and flowering times between different populations. The project may be judged a success should be it capable of providing the prerequisite steps and analysis to reach this stage, as well as data that allows conclusions about phenotypes to be made on these questions and others.
+
 
 
 %==============================================================================
@@ -145,11 +149,51 @@ As per the system overview, the next feature to be prototyped shall be that of p
 %==============================================================================
 \section{Planning}
 %==============================================================================
-Text in here.
+\subsection{Methodology}
+In undertaking this project, it was explored what development methodologies could be applied, such as the waterfall model,  rapid application development, or iterative and incremental design.
 
-%
-% Start to comment out / remove the following lines. They are only provided for instruction for this example template.  You don't need the following section title, because it will be added as part of the bibliography section. 
-%
+Under the waterfall model, the project is completed in seven phases which are followed in order: requirements specification; design; implementation; integration; testing; installation; and maintenance. In this way, all requirements and concepts are laid out in detail before any implementation begins. This can create issues where it is not clear the exact route to be taken to complete the tasks at hand, or serious difficulties arise preventing implementation of a section; and if requirements change, potentially large sums of work can be invalidated.
+
+With rapid application development (rad), a project consists of just four phases: Requirements planning, where the requirements, scope, and constraints are defined; user design, where prototyping is used to understand and modify the specification to fit the needs of the task; construction, where the application is developed; and cutover, where testing and delivery take place. This allows for a far more flexible approach than under waterfall, with input and changes welcomed at each stage, whilst still maintaining a design-first approach.
+
+In Iterative and Incremental Design, there are four phases, which may iterate numerous times. Inception is used to outline requirements and scope at a high level; elaboration then allows for the drawing up of a more defined working structure; this is then incrementally produced in the construction phase, after which the system is transitioned into the operating environment. Through the use of iteration, the project can evolve over time beginning with simple implementation of parts of the structure, making use of previous iterations to expand and improve existing and future features.
+
+It was decided that as the project was wide enough to provide uncertainty in low-level requirements, an iterative and incremental model would be most suitable, so as to provide for development of features in a modular form that could expand in scope as and when needed. 
+
+In doing this, a working product can be derived from a broad system overview, or system control list, and each feature can be implemented easily and in a manageable and scheduled manner. This means a clear road-plan exists whilst also providing fluidity and adaptability in the project.
+
+\subsection{Project Schedule}
+Figure 4 depicts the current project road-plan through to the final deliverable of the final presentation, taking into account likely risks or delays caused by external factors such as exams starting in week 3, 2013; conference attendances throughout the same timeframe as the project, and temporary incapacity due to illness. 
+
+Each task prior to Week 1, 2013, corresponds to development of key features through an iterative process, and this deadline is set to ensure a core set of features are delivered. Following weeks account for the formalisation and refactoring of this code base, whilst exploring other opportunities to build upon this core.
+The plan provides a full six weeks where the code should be locked and work is focused entirely on delivery of the final report. This is reflective of the weighting of the report, as well as the need to ensure functional, documented code prior to the final delivery of the project.
+
+Given the nature of iterative and incremental development, several weeks have been set aside for the exploration of techniques not yet specified in the control list / system overview.
+
+By week 50, the code base should contain functionality for the core features required for basic analysis, namely colour frequency analysis, image segmentation, and plant classification. In the following weeks, additional algorithms are to be added to further refine these features, as well as to provide analysis in other areas, for example, leaf density.
+
+In addition to the tasks listed, it is hoped that discussions shall be held with staff and researchers involved in the National Plant Phenomics Centre at IBERS; and it is likely that such talks will help shape the direction of the project, such as by providing insight into potential problems for the system to attempt to solve, or access to new datasets potentially using different imaging techniques. Changes due to this are already partially factored into the assigned time frames for the completion of each task.
+
+\begin{figure}[gantt]
+\centering
+\includegraphics[width=1\textwidth]{gantt.png}
+\caption{Gantt diagram showing project road-plan through to week 18, 2013 }
+\label{fig:gantt}
+\end{figure}
+
+\subsection{Demonstrations}
+Completion of the project includes two demonstrations of the system. Once during week 5, 2013, and again during week 18, 2013. In both instances, it is hoped that results of the analysis from implemented features can be presented, where possible demonstrating the processing and analysis live.
+
+In the mid-project demonstration, it is to be expected that there would be less data to show due to not all analysis features being implemented at that stage, as well as the possibility of additional data sets being made available throughout the duration of the project, including after this demonstration. However, it should be considered sufficient to demonstrate, more than merely “proof of concept”, that the system is functional and capable of producing real phenomic information based on the provided input data, even if the output data is limited in its scope at this stage.
+
+For the final demonstration, it is expected that more findings of project can be reported, namely at least some of the questions laid out in prior sections of this document. In addition, a live demonstration of the software, should also be conducted, as well as potential discussion of future scope for research and development from this project post-delivery.
+
+With both demonstrations, access to a projector, and a device capable of running presentation software is a clear requirement. Ensuring the device is also capable of processing data in real-time and within the timeframe of the demonstration is also a major consideration, which may involve the selection of a subset of a data set or other such preparation to ensure execution times are permissible.
+
+
+
+
+
 
 
 \nocite{*} % include everything from the bibliography, irrespective of whether it has been referenced.
